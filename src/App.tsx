@@ -18,25 +18,33 @@ function App() {
           container sx={{ justifyContent: 'flex-end', alignItems: 'center' }}>
 
           <AlertUI description="No se prevén lluvias" />
+          <AlertUI description="Índice UV alto" severity="warning" variant="filled" />
 
         </Grid>
 
       {/* Selector */}
-          <Grid size={{ xs: 12, md: 3 }}>
-              <SelectorUI />
-          </Grid>
+        <Grid size={{ xs: 12, md: 3 }}>
+            <SelectorUI />
+        </Grid>
 
       {/* Indicadores */}
-      <Grid>Elemento: Indicadores</Grid>
+        <Grid size={{ xs: 12, md: 9 }}>Elemento: Indicadores</Grid>
 
       {/* Gráfico */}
-      <Grid>Elemento: Gráfico</Grid>
+        <Grid 
+        size={{ xs: 12, md: 6 }} sx={{display: {xs: "none", md: "block"}}}>
+          Elemento: Gráfico
+        </Grid>
 
       {/* Tabla */}
-      <Grid>Elemento: Tabla</Grid>
+        <Grid size={{ xs: 12, md: 6 }} sx={{display: {xs: "none", md: "block"}}}>
+          Elemento: Tabla
+        </Grid>
 
       {/* Información adicional */}
-      <Grid>Elemento: Información adicional</Grid>
+        <Grid size={{ xs: 12, md: 12 }}>
+          Elemento: Información adicional
+        </Grid>
     </Grid>
   );
 }
